@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlavorFinder | Discover Recipes by Ingredient</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="navbar">
+
+        <div class="navbar-brand"> 
+             <img src="img/logo.png" alt="FlavorFinder logo" class="brand-logo"> FlavorFinder
+            </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#hero-section">Home</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#contact-us">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="hero-section">
+            <div class="hero-content">
+                <h1>Unlock Delicious Recipes with What You Already Have!</h1>
+                <p>Say goodbye to food waste and hello to culinary creativity. Just enter your ingredients and let the magic begin. ✨</p>
+                <div class="search-box">
+                    <input type="text" id="ingredients-input" placeholder="e.g., chicken, broccoli, pasta, cheese">
+                    <button id="search-btn">Find Recipes</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="recipes-section container">
+            <h2 id="results-title" style="text-align: center; margin-bottom: 2rem; display: none;">Search Results</h2>
+            <div class="loader" id="loader"></div>
+            <div class="recipes-grid" id="recipes-container">
+            </div>
+            <div class="message" id="message"></div>
+        </section>
+
+        <section class="how-it-works" id="how-it-works">
+            <div class="container">
+                <h2>How FlavorFinder Works</h2>
+                <div class="steps-container">
+                    <div class="step-card">
+                        <span class="icon">🔍</span>
+                        <h3>1. Enter Ingredients</h3>
+                        <p>Simply type the ingredients you have on hand into the search bar. You can add as many as you like!</p>
+                    </div>
+                    <div class="step-card">
+                        <span class="icon">✨</span>
+                        <h3>2. Discover Recipes</h3>
+                        <p>Our smart system instantly finds delicious recipes that match your ingredients and suggests new ideas.</p>
+                    </div>
+                    <div class="step-card">
+                        <span class="icon">🍽️</span>
+                        <h3>3. Cook & Enjoy!</h3>
+                        <p>Browse the results, pick a recipe you love, and start cooking! It's that easy to make a meal.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+         <!-- Meal Plans Section -->
+       <section class="meal-plans" id="meal-plans">
+    <div class="container">
+        <h2>Explore Our Meal Plans</h2>
+        <p>Discover curated weekly meal plans designed for various diets and lifestyles. Simplify your cooking journey with our expert-designed guides.</p>
+        <div class="steps-container">
+            <a href="https://www.fabulousmomlife.com/homemaking/vegetarian-indian-meal-plan-for-a-month-week-1/" class="step-card">
+                <span class="icon">🥗</span>
+                <h3>Weekly Vegetarian Plan</h3>
+                <p>Fresh, plant-based meals that are delicious and easy to prepare.</p>
+            </a>
+            <a href="https://www.indianhealthyrecipes.com/indian-dinner-recipes/" class="step-card">
+                <span class="icon">⚡</span>
+                <h3>Quick & Healthy Dinners</h3>
+                <p>Perfect for busy weeknights, with recipes ready in 30 minutes or less.</p>
+            </a>
+            <a href="https://whattocook.substack.com/p/10-budget-friendly-dinner-ideas" class="step-card">
+                <span class="icon">💰</span>
+                <h3>Budget-Friendly Cooking</h3>
+                <p>Save money without sacrificing flavor. Smart recipes for the savvy cook.</p>
+            </a>
+        </div>
+
+         <a href="https://www.allrecipes.com/" id="seePlansBtn">See All Plans</a>
+    </div>
+</section>
+
+  <!-- Cooking Tips Section -->
+  <section class="tips-section">
+    <div class="container">
+      <h2>Pro Cooking Tips</h2>
+      <div class="grid">
+        <div class="tip-card">
+          <img src="https://placehold.co/100x100/F8B400/3B2E2F?text=Tip+1" alt="Tip 1">
+          <h3>Prep Like a Pro</h3>
+          <p>Chop vegetables and measure spices in advance to save time while cooking.</p>
+        </div>
+        <div class="tip-card">
+          <img src="https://placehold.co/100x100/A32D4B/F5F0E6?text=Tip+2" alt="Tip 2">
+          <h3>Master Your Spices</h3>
+          <p>Toast whole spices before grinding them to unlock a deeper, richer flavor.</p>
+        </div>
+        <div class="tip-card">
+          <img src="https://placehold.co/100x100/3B2E2F/F5F0E6?text=Tip+3" alt="Tip 3">
+          <h3>Don't Crowd the Pan</h3>
+          <p>Cook in batches to ensure ingredients brown nicely instead of steaming.</p>
+        </div>
+        <div class="tip-card">
+          <img src="https://placehold.co/100x100/F5F0E6/5D5656?text=Tip+4" alt="Tip 4">
+          <h3>Salt in Layers</h3>
+          <p>Add salt at different stages of cooking to build a more complex flavor profile.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+        <section class="testimonials">
+            <div class="container">
+                <h2>What Our Users Say</h2>
+                <div class="testimonials-grid" id="testimonials-grid">
+                    <div class="testimonial-card">
+                        <span class="quote-icon">❝</span>
+                        <p>"FlavorFinder has completely changed how I cook. I no longer have to throw away ingredients, and I've discovered so many new favorite recipes!"</p>
+                        <div class="user-info">
+                            <img src="https://api.dicebear.com/8.x/adventurer/svg?seed=Jane&gender=female" alt="User photo of Jane D." class="user-photo">
+                            <div class="author">- Jane D.</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <span class="quote-icon">❝</span>
+                        <p>"This app is a lifesaver on busy weeknights. I can quickly find a delicious meal with what I already have. The design is beautiful and so easy to use."</p>
+                        <div class="user-info">
+                            <img src="https://api.dicebear.com/8.x/adventurer/svg?seed=Mark&gender=male" alt="User photo of Mark T." class="user-photo">
+                            <div class="author">- Mark T.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="add-review-section">
+                    <h3>Give Us Your Review!</h3>
+                    <form id="review-form">
+                        <textarea id="review-text" placeholder="Share your experience here..." rows="4" required></textarea>
+                        <div class="form-row">
+                            <input type="text" id="reviewer-name" placeholder="Your Name" required>
+                            <select id="reviewer-gender" required>
+                                <option value="" disabled selected>Select Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="none">Prefer not to say</option>
+                            </select>
+                        </div>
+                        <button type="submit" id="submit-review-btn">Submit Review</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="our-story" id="about-us">
+            <div class="container our-story-content">
+                <h2>Our Story</h2>
+                <p>FlavorFinder was born out of a simple idea: to make cooking more intuitive and less wasteful. Our team of food lovers and tech enthusiasts realized that many people struggle with meal planning and often end up with unused ingredients. We set out to create a solution that not only inspires new culinary adventures but also helps reduce food waste, one delicious meal at a time. We believe that good food starts with simple steps, and our mission is to empower you to cook smarter, not harder.</p>
+            </div>
+        </section>
+
+        <section class="newsletter" id="contact-us">
+            <div class="container">
+                <h2>Join Our Newsletter</h2>
+                <p>Stay updated with our latest recipes, tips, and special offers!</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-column">
+                <h4>About FlavorFinder</h4>
+                <p>Your go-to recipe finder. We help you create delicious meals with the ingredients you already have, making cooking fun and simple.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#hero-section">Home</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#">Our Vision</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li>Email: contact@flavorfinder.com</li>
+                    <li>Phone: +91-9876543210</li>
+                    <li>Address: 123 Cook St, Culinary City, Mumbai, India</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 FlavorFinder. All rights reserved.
+        </div>
+    </footer>
+
+    <script type="module" src="/script.js"></script>
+</body>
+</html>

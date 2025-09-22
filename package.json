@@ -1,0 +1,17 @@
+{
+  "name": "flavorfinder-discover-recipes-by-ingredient",
+  "version": "1.0.0",
+  "description": "flavorFinder-discover-recipes-by-ingredient",
+  "main": "script.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^7.1.6"
+  }
+}
