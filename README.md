@@ -3,7 +3,7 @@
 **FlavorFinder** is a web application that helps users find delicious recipes based on the ingredients they already have in their pantry.  
 The goal is to reduce food waste and inspire culinary creativity by providing an easy-to-use interface to discover new meals.
 
-🔗 **Live Project:** [View Here](https://your-live-project-link.com)
+🔗 **Live Project:** [Click Here](https://flavorfinder-discover-recipes.netlify.app/)
 
 ---
 
